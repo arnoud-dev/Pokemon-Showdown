@@ -92,6 +92,16 @@ body {
   overflow: hidden;
 }
 
+.pokemon-slot img {
+  max-height: none;
+  height: 80%;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+
 .pokemon-slot.empty::after {
   content: 'Pretty Empty...';
   opacity: 0.7;
