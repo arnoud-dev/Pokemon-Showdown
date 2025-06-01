@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Showdown</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="arena">
+      <!-- Player 1 panel -->
+      <section class="player" id="player1">
+        <h2 class="player-name" contenteditable="true">Player&nbsp;1</h2>
+        <div class="hp-bar" data-player="1">
+          <div class="hp-fill" style="width: 100%"></div>
+        </div>
+        <div class="pokemon-slot empty" id="p1-pokemon"></div>
+        <button class="choose-btn" id="p1-choose">Choose your Pokemon</button>
+      </section>
+
+      <!-- battle controls -->
+      <div class="battle-controls">
+        <button class="start-btn" id="start-btn">Start</button>
+      </div>
+
+      <!-- Player 2 panel -->
+      <section class="player" id="player2">
+        <h2 class="player-name" contenteditable="true">Player&nbsp;2</h2>
+        <div class="hp-bar" data-player="2">
+          <div class="hp-fill" style="width: 100%"></div>
+        </div>
+        <div class="pokemon-slot empty" id="p2-pokemon"></div>
+        <button class="choose-btn" id="p2-choose">Choose your Pokemon</button>
+      </section>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
